@@ -18,12 +18,23 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 70%;
+    background-size: cover;
   }
   h1 {
     color: #444;
+	font-size: 2.5em;
+    margin-bottom: 0;
+	line-height:10px;
+  }
+  h2 {
+	color: #444;
     margin-bottom: 0;
   }
+  h3 {
+	color: #444;
+    margin-bottom: 0;
+	line-height:10px;}
+  
   p {
     font-size: 1.1em;
     margin-top: 0;
@@ -37,7 +48,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   .contact-info h2 {
-    color: #333;
+    color: #444;
     font-size: 1.4em;
     margin-bottom: 10px;
   }
@@ -52,18 +63,25 @@
   a:hover {
     text-decoration: underline;
   }
+    .opaque-background {
+    background-color: rgba(255, 255, 255, 1); /* Adjust the color and opacity as needed */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
 </style>
 </head>
 <body>
-	<div>
+	<div class=opaque-background>
 	  <h2>Catalogue raisonné de l'oeuvre</h2>
-	  <h1>d'Arié Mandelbaum</h1></div>
+	  <h1>d'Arié Mandelbaum</h1>
   <br>
   <div class="contact-info">
     <h3>Actuellement en préparation par</h3>
     <h2>Justin Mackenzie Peers</h2>
     <p>Email: <a href="mailto:catalogue.arie.mandelbaum@gmail.com">catalogue.arie.mandelbaum@gmail.com</a></p>
     <p>Tél: <a href="tel:+33611495027">+33 6 11 49 50 27</a></p>
+  </div>
   </div>
 </body>
 </html>
