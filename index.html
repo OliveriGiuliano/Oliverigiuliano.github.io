@@ -3,83 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catalogue raisonné Arié Mandelbaum</title>
+<title>Catalogue Raisonné d'Arié Mandelbaum</title>
 <style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f3f3f3;
-    color: #333;
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-	background: url(barque1.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  h1 {
-    color: #444;
-	font-size: 2.5em;
-    margin-bottom: 0;
-  }
-  h2 {
-	color: #444;
-    margin-bottom: 0;
-  }
-  h3 {
-	color: #444;
-    margin-bottom: 0;}
-  
-  p {
-    font-size: 1.1em;
-    margin-top: 0;
-  }
-  .contact-info {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  .contact-info h2 {
-    color: #444;
-    font-size: 1.4em;
-    margin-bottom: 10px;
-  }
-  .contact-info p {
-    line-height: 1.6;
-    margin: 10px 0;
-  }
-  a {
-    color: #5b9bd5;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-    .opaque-background {
-    background-color: rgba(255, 255, 255, 1); /* Adjust the color and opacity as needed */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Arial', sans-serif; color: #333; line-height: 1.6; }
+  .header { background: url('barque1.jpg') no-repeat center center/cover; height: 100vh; display: flex; justify-content: center; align-items: center; background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+  .header h1 { color: #fff; font-size: 3rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+  .content { padding: 40px; text-align: center; }
+  .content h2 { font-size: 2rem; color: #333; margin-bottom: 20px; }
+  .content p { font-size: 1.1rem; margin-bottom: 10px; }
+  .contact { background: #333; color: #fff; padding: 20px; text-align: center; }
+  .contact a { color: #fff; text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+  footer { background: #222; color: #ddd; padding: 10px; text-align: center; }
 </style>
 </head>
 <body>
-	<div class=opaque-background>
-	  <h2>Catalogue raisonné de l'oeuvre</h2>
-	  <h1>d'Arié Mandelbaum</h1>
-  <br>
-  <div class="contact-info">
-    <h3>Actuellement en préparation par</h3>
-    <h2>Justin MacKenzie Peers</h2>
+  <header class="header">
+    <h1>Catalogue Raisonné d'Arié Mandelbaum</h1>
+  </header>
+  <div class="content">
+    <h3>Actuellement en préparation par Justin MacKenzie Peers</h3>
     <p>Email: <a href="mailto:catalogue.arie.mandelbaum@gmail.com">catalogue.arie.mandelbaum@gmail.com</a></p>
     <p>Tél: <a href="tel:+33611495027">+33 6 11 49 50 27</a></p>
   </div>
+  <div class="contact">
+    <p>Contactez-nous pour plus d'informations.</p>
   </div>
+  <footer>
+    <p>© 2024 Catalogue Raisonné d'Arié Mandelbaum. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
