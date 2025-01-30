@@ -8,13 +8,54 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: 'Arial', sans-serif; color: #333; line-height: 1.6; }
-  .header { background: url('barque1.jpg') no-repeat center center/cover; height: 100vh; display: flex; justify-content: center; align-items: center; background-attachment: scroll;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;}
-  .header h1 { color: #fff; font-size: 3rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+  .header { 
+    background: url('barque1.jpg') no-repeat center center/cover; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+    background-attachment: scroll;
+    position: relative;
+    padding: 200px;
+  }
+  .header h1 { 
+    color: #fff; 
+    font-size: 2.8rem; 
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 0.5;
+    max-width: 900px;
+  }
+  .header h2 { 
+    color: #fff; 
+    font-size: 2rem; 
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 0;
+    max-width: 900px;
+  }
+  .text-overlay {
+    background: rgba(53, 53, 53, 0.233);
+    padding: 30px 40px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 20px;
+  }
+  .header-text {
+    color: #fff;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    line-height: 1.7;
+    text-align: center;
+  }
+  .header-text p {
+    margin-bottom: 1.2em;
+  }
   .content { padding: 40px; text-align: center; }
-  .content h2 { font-size: 2rem; color: #333; margin-bottom: 20px; }
+  .content h3 { font-size: 1.8rem; color: #333; margin-bottom: 20px; }
   .content p { font-size: 1.1rem; margin-bottom: 10px; }
   .contact { background: #333; color: #fff; padding: 20px; text-align: center; }
   .contact a { color: #fff; text-decoration: none; }
@@ -24,15 +65,26 @@
 </head>
 <body>
   <header class="header">
-    <h1>Catalogue Raisonné de l'œuvre d'Arié Mandelbaum</h1>
+    <h2>Catalogue Raisonné de l'œuvre </h1>
+    <h1> d'Arié Mandelbaum</h1>
+    <div class="text-overlay">
+      <div class="header-text">
+        <p>En vue de la publication du Catalogue Raisonné<br>
+        de l’œuvre du peintre Arié Mandelbaum,<br>
+        nous remercions toute personne possédant<br>
+        des œuvres (peintures, dessins, gravures)<br>
+        de l’artiste de bien vouloir nous contacter.</p>
+        
+        <p>Nous sommes également à la recherche d'archives<br>
+        pouvant aider à la documentation de son œuvre<br>
+        (photos d'expositions, cartons d'invitations, articles de presse...)</p>
+      </div>
+    </div>
   </header>
   <div class="content">
-    <h3>Actuellement en préparation par Justin MacKenzie Peers</h3>
-    <p>Email: <a href="mailto:catalogue.arie.mandelbaum@gmail.com">catalogue.arie.mandelbaum@gmail.com</a></p>
+    <p>Contact : Justin MacKenzie Peers</p>
+    <p><a href="mailto:catalogue.arie.mandelbaum@gmail.com">catalogue.arie.mandelbaum@gmail.com</a></p>
     <p>Tél: <a href="tel:+33611495027">+33 6 11 49 50 27</a></p>
-  </div>
-  <div class="contact">
-    <p>Contactez-nous pour plus d'informations.</p>
   </div>
   <footer>
     <p>© 2024 Catalogue Raisonné d'Arié Mandelbaum. Tous droits réservés.</p>
