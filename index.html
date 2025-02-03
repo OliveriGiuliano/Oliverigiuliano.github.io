@@ -2,87 +2,157 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <title>Catalogue Raisonné Arié Mandelbaum</title>
 <link rel="icon" href="icon.png" type="image/icon type">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: 'Arial', sans-serif; color: #333; line-height: 1.6; }
+  
   .header { 
     background: url('barque1.jpg') no-repeat center center/cover; 
-    height: 100vh; 
+    min-height: 95vh; 
     display: flex; 
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    background-attachment: scroll;
     position: relative;
-    padding: 20px;
+    padding: 2rem 1rem;
   }
+  
+  .header h1, .header h2 { 
+    color: #fff; 
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    text-align: center;
+    line-height: 1.2;
+    width: 100%;
+    max-width: 900px;
+    margin: 0.5rem 0;
+  }
+
   .header h1 { 
-    color: #fff; 
-    font-size: 2.8rem; 
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
-    margin-bottom: 40px;
-    text-align: center;
-    line-height: 0.5;
-    max-width: 900px;
+    font-size: clamp(2rem, 5vw, 2.8rem);
   }
+
   .header h2 { 
-    color: #fff; 
-    font-size: 2rem; 
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
-    margin-bottom: 40px;
-    text-align: center;
-    line-height: 0;
-    max-width: 900px;
+    font-size: clamp(1.5rem, 4vw, 2rem);
   }
+
   .text-overlay {
     background: rgba(53, 53, 53, 0.233);
-    padding: 30px 40px;
+    padding: 2rem;
     border-radius: 8px;
     max-width: 800px;
-    margin: 0 20px;
+    width: 90%;
+    margin: 1.5rem 0;
   }
+
   .header-text {
     color: #fff;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
     text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-    line-height: 1.7;
+    line-height: 1.6;
     text-align: center;
   }
+
   .header-text p {
     margin-bottom: 1.2em;
   }
-  .content { padding: 40px; text-align: center; }
-  .content h3 { font-size: 1.8rem; color: #333; margin-bottom: 20px; }
-  .content p { font-size: 1.1rem; margin-bottom: 10px; }
-  .contact { background: #333; color: #fff; padding: 20px; text-align: center; }
-  .contact a { color: #fff; text-decoration: none; }
+
+  .content { 
+    padding: 2rem 5%; 
+    text-align: center; 
+  }
+
+  .content h3 { 
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    color: #333; 
+    margin-bottom: 1.5rem; 
+  }
+
+  .content p { 
+    font-size: clamp(1rem, 2vw, 1.1rem); 
+    margin-bottom: 1rem; 
+  }
+
+  .contact { 
+    background: #333; 
+    color: #fff; 
+    padding: 1.5rem; 
+    text-align: center; 
+    font-size: clamp(0.9rem, 2vw, 1rem);
+  }
+
+  .contact a { 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 0.3em 0;
+    display: inline-block;
+  }
+
   .contact a:hover { text-decoration: underline; }
-  footer { background: #222; color: #ddd; padding: 10px; text-align: center; }
+
+  footer { 
+    background: #222; 
+    color: #ddd; 
+    padding: 1rem; 
+    text-align: center; 
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      min-height: 85vh;
+      padding: 1rem;
+    }
+    
+    .text-overlay {
+      padding: 1.5rem;
+      width: 95%;
+    }
+
+    .header-text {
+      line-height: 1.5;
+    }
+
+    .content {
+      padding: 2rem 5%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header {
+      min-height: 75vh;
+    }
+    
+    .text-overlay {
+      padding: 1rem;
+    }
+
+    .header-text p {
+      margin-bottom: 1em;
+    }
+
+    .contact {
+      padding: 1.5rem 1rem;
+    }
+  }
 </style>
 </head>
 <body>
   <header class="header">
-    <h2>Catalogue Raisonné de l'œuvre </h1>
-    <h1> d'Arié Mandelbaum</h1>
+    <h2>Catalogue Raisonné de l'œuvre</h2>
+    <h1>d'Arié Mandelbaum</h1>
     <div class="text-overlay">
       <div class="header-text">
-        <p>En vue de la publication du Catalogue Raisonné<br>
-        de l’œuvre du peintre Arié Mandelbaum,<br>
-        nous remercions toute personne possédant<br>
-        des œuvres (peintures, dessins, gravures)<br>
-        de l’artiste de bien vouloir nous contacter.</p>
+        <p>En vue de la publication du Catalogue Raisonné de l’œuvre du peintre Arié Mandelbaum, nous remercions toute personne possédant des œuvres (peintures, dessins, gravures) de l’artiste de bien vouloir nous contacter.</p>
         
-        <p>Nous sommes également à la recherche d'archives<br>
-        pouvant aider à la documentation de son œuvre<br>
-        (photos d'expositions, cartons d'invitations, articles de presse...)</p>
+        <p>Nous sommes également à la recherche d'archives pouvant aider à la documentation de son œuvre (photos d'expositions, cartons d'invitations, articles de presse...)</p>
       </div>
     </div>
   </header>
   <div class="content">
-    <p>Contact : Justin MacKenzie Peers</p>
+    <p>Contact : Justin MacKenzie Peers</p>
     <p><a href="mailto:catalogue.arie.mandelbaum@gmail.com">catalogue.arie.mandelbaum@gmail.com</a></p>
     <p>Tél: <a href="tel:+33611495027">+33 6 11 49 50 27</a></p>
   </div>
